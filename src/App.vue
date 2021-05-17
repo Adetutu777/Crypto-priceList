@@ -1,5 +1,5 @@
 <template>
- <h1 class="text-center pt-5"> <b> Trending Crypto Coin </b> </h1>
+ <h2 class="text-center pt-5"> <b> Trending Crypto Coin </b> </h2>
 
  
 <div class="container table-responsive py-5" > 
@@ -34,21 +34,21 @@
         <th scope="col">Name</th>
       <th scope="col">Symbol</th>
       <th scope="col">Current Price</th>
-      <th scope="col">% movement</th>
-      <th scope="col">Mkt. Volume</th>
+      <th scope="col">% in 24hrs</th>
+      <th scope="col">Mkt. cap</th>
     
     </tr>
   </thead>
   <tbody>
-    <tr class="text-white" v-for= "data in matchNames" :key="data.id">
+    <tr class="text-white datanames" v-for= "data in matchNames" :key="data.id">
     
  
      <td><img class="img-img" :src="data.image" alt="cryptoImage"></td>
       <td>{{data.name}}</td>
       <td>{{data.symbol}}</td>
-      <td>{{data.current_price}}</td>
-      <td>{{data.ath_change_percentage}}</td>
-      <td>{{data.total_volume}}</td>
+      <td> ${{data.current_price.toLocaleString()}}</td>
+      <td>{{data.price_change_percentage_24h.toFixed(2)}}%</td>
+      <td>{{data.market_cap.toLocaleString()}}</td>
     </tr>
     
   </tbody>
@@ -119,7 +119,13 @@ export default {
         });
   });
     
-   return { matchNames, search, myCrypto, myCoin}
+     
+    const formatMoney =(amt)=> {
+      return (
+      new Intl.Number("en-US", {style: 'currency', currency: 'USD'} ).format(amt)
+      )
+}
+   return { matchNames, search, myCrypto, myCoin, formatMoney}
   }
   
 
@@ -131,6 +137,11 @@ export default {
 
 #app {
     color: white;
+}
+
+.datanames:hover{
+
+border: 1.5px solid rgb(235, 11, 78);
 }
 
 .img-img{
