@@ -1,5 +1,5 @@
 <template>
- <h2 class="text-center pt-5"> <b> Trending Crypto Coin </b> </h2>
+ <h2 class="text-center pt-5"> <b> Top 100 Crypto Coin </b> </h2>
 
  
 <div class="container table-responsive py-5" > 
@@ -32,7 +32,7 @@
          
          <th scope="col">Logo</th>
         <th scope="col">Name</th>
-      <th scope="col">Symbol</th>
+      <th clas="text-center" scope="col">Symbol</th>
       <th scope="col">Current Price</th>
       <th scope="col">% in 24hrs</th>
       <th scope="col">Mkt. cap</th>
@@ -43,9 +43,9 @@
     <tr class="text-white datanames" v-for= "data in matchNames" :key="data.id">
     
  
-     <td><img class="img-img" :src="data.image" alt="cryptoImage"></td>
-      <td>{{data.name}}</td>
-      <td>{{data.symbol}}</td>
+     <td class="text-center"><img class="img-img" :src="data.image" alt="cryptoImage"></td>
+      <td class="">{{data.name}}</td>
+      <td clas="text-center">{{data.symbol}}</td>
       <td> ${{data.current_price.toLocaleString()}}</td>
       <td>
       <span :class = "`${data.price_change_percentage_24h> 0 ? 'green' : 'red'}`">
@@ -151,7 +151,7 @@ border: 1.5px solid rgb(235, 11, 78);
 }
 
 .img-img{
-width:30px;
+max-width:30px;
 }
 
 .cont-from{
