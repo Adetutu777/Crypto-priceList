@@ -47,8 +47,14 @@
       <td>{{data.name}}</td>
       <td>{{data.symbol}}</td>
       <td> ${{data.current_price.toLocaleString()}}</td>
-      <td>{{data.price_change_percentage_24h.toFixed(2)}}%</td>
-      <td>{{data.market_cap.toLocaleString()}}</td>
+      <td>
+      <span :class = "`${data.price_change_percentage_24h> 0 ? 'green' : 'red'}`">
+       {{data.price_change_percentage_24h.toFixed(2)}}%
+      </span>
+
+      </td>
+
+      <td>${{data.market_cap.toLocaleString()}}</td>
     </tr>
     
   </tbody>
@@ -150,6 +156,14 @@ width:30px;
 
 .cont-from{
 background: rgb(245, 230, 230) ;
+}
+
+.green{
+color:rgb(19, 236, 19);
+}
+
+.red {
+color:rgb(255, 6, 6);
 }
 
 </style>
