@@ -2,7 +2,7 @@
  <h2 class="text-center pt-5"> <b> Top 100 Crypto Coin </b> </h2>
 
  
-<div class="container table-responsive py-5" > 
+<div class="container table-responsive py-5" >
 <div class="row">
 
   <div class="form-group has-search pb-5" style="margin: 0 auto">
@@ -159,7 +159,8 @@ max-width:30px;
 }
 
 .cont-from{
-background: rgb(245, 230, 230) ;
+color: black;
+font-weight: bold;
 }
 
 .green{
