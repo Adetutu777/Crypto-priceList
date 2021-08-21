@@ -1,8 +1,8 @@
 <template>
- <h2 class="text-center pt-5"> <b> Top 100 Crypto Coin </b> </h2>
 
- 
+
 <div class="container table-responsive py-5" >
+ <h2 class="text-center pt-3 pb-3"> <b> Top 100 Crypto Coin </b> </h2>
 <div class="row">
 
   <div class="form-group has-search pb-5" style="margin: 0 auto">
@@ -25,7 +25,7 @@
 
           <!-- <div v-if= "myCryto.loaded && myCrypto.data.length ===0"> There are no result for your search
        </div> -->
-
+      
 <table class="table table-bordered table-hover"  >
   <thead class="thead-dark">
     <tr>
