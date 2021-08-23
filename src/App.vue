@@ -84,7 +84,7 @@
   <footer>
 <!-- Copyright -->
   <div class="footer-copyright text-center py-3 my-info">© 2021 Copyright:
-    <a class=" info-text" style="text-decoration:none" href="https://adetutu.netlify.app/"> Adetutu</a>
+    <a class=" info-text" style="text-decoration:none" href="https://adetutu.netlify.app/"> <i>Adetutu</i></a>
   </div>
   <!-- Copyright -->
 </footer>
@@ -190,7 +190,7 @@ color:rgb(255, 6, 6);
 .info-text{
 font-size: 1.2rem;
 font-weight: bolder;
-color: rgb(197, 34, 34);
+color: rgb(141, 133, 253);
 
 }
 
