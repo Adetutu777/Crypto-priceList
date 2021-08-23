@@ -1,13 +1,28 @@
 <template>
+<h2 class="text-center mt-5 pb-4"> <b> Top 100 Crypto Coin </b> </h2>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+  <form>
+    <!-- search input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form1Example1" class="form-control cont-from" style="margin: 0 auto; width:70%" placeholder="Search" v-model="search"/>
+    </div>
+  </form></div>
+  <div class="col-md-4"></div>
+  </div>
+</div>
+
+
 
 
 <div class="container table-responsive py-5" >
- <h2 class="text-center pt-3 pb-3"> <b> Top 100 Crypto Coin </b> </h2>
 <div class="row">
 
-  <div class="form-group has-search pb-5" style="margin: 0 auto">
+  <!-- <div class="form-group has-search pb-5" style="margin: 0 auto">
     <input type="text" class="form-control cont-from"  placeholder="Search" v-model="search" />
-  </div>
+  </div> -->
 
         <div class="container">
       <div class="row pb-2">
@@ -28,6 +43,7 @@
       
 <table class="table table-bordered table-hover"  >
   <thead class="thead-dark">
+  
     <tr>
          
          <th scope="col">Logo</th>
