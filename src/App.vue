@@ -7,7 +7,7 @@
   <form>
     <!-- search input -->
     <div class="form-outline mb-4">
-      <input type="email" id="form1Example1" class="form-control cont-from" style="margin: 0 auto; width:70%" placeholder="Search" v-model="search"/>
+      <input type="text" class="form-control cont-from" style="margin: 0 auto; width:70%" placeholder="Search" v-model="search"/>
     </div>
   </form></div>
   <div class="col-md-4"></div>
