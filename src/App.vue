@@ -7,7 +7,7 @@
   <form>
     <!-- search input -->
     <div class="form-outline mb-4">
-      <input type="text" class="form-control cont-from" style="margin: 0 auto; width:70%" placeholder="Search" v-model="search"/>
+      <input type="text" class="form-control cont-from" style="margin: 0 auto; width:70%" placeholder="search name" v-model="search" required/>
     </div>
   </form></div>
   <div class="col-md-4"></div>
@@ -99,7 +99,7 @@ export default {
   name: "App",
   
   setup() {
-              const myCrypto = reactive({
+            const myCrypto = reactive({
             data: [],
             loading: null,
             error: false,
