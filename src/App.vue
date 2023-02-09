@@ -83,7 +83,7 @@
 
   <footer>
 <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 my-info">© 2021 Copyright:
+  <div class="footer-copyright text-center py-3 my-info">© 2023 Copyright:
     <a class=" info-text" style="text-decoration:none" href="https://adetutu.netlify.app/"> <i>Adetutu</i></a>
   </div>
   <!-- Copyright -->
